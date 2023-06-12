@@ -183,8 +183,10 @@ const Menu = () => {
                                     </div>
                                     <div className=" flex flex-col-reverse">
                                         {" "}
-                                        <p className="font-semibold text-red-600 p-1 shadow-md  rounded-md">
-                                            {dish.available ? "" : "Sold Out"}
+                                        <p className="font-semibold text-red-600 p-1 shadow-md -tracking-tighter  rounded-md">
+                                            {dish.available
+                                                ? "Stock"
+                                                : "Sold Out"}
                                         </p>
                                     </div>
                                 </div>
